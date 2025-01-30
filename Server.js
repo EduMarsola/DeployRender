@@ -1,6 +1,5 @@
 import fastify from "fastify";
 import dotenv from "dotenv";
-dotenv.process()
 
 const server = fastify()
 server.get('/', () =>{
