@@ -1,4 +1,6 @@
 import fastify from "fastify";
+import dotenv from "dotenv";
+dotenv.process()
 
 const server = fastify()
 server.get('/', () =>{
@@ -6,4 +8,4 @@ server.get('/', () =>{
 })
 
 
-server.listen({port : 1000})
+server.listen({port : process.env.PORT ?? 1000})
